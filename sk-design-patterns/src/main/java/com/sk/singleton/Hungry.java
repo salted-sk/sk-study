@@ -8,10 +8,10 @@ package com.sk.singleton;
  */
 public class Hungry {
 
-    private static JavaCourse course = new JavaCourse();
+    private static Hungry hungry = new Hungry();
 
-    public JavaCourse getCourse(){
-        return course;
+    public Hungry getHungry(){
+        return hungry;
     }
 
 }

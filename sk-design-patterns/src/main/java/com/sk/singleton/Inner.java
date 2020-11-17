@@ -14,18 +14,17 @@ public class Inner {
         System.out.println("创建inner对象");
     }
 
-    private static JavaCourse course = null;
 
-    private static  Inner inner = new Inner();
+    private static  Inner inner = null;
 
-    public static JavaCourse getCourse(){
-        course = InnerCourse.course;
-        return course;
+    public static Inner getInner(){
+        inner = InnerCourse.inner;
+        return inner;
     }
 
     private static class InnerCourse{
 
-        private static final JavaCourse course = new JavaCourse();
+        private static final Inner inner = new Inner();
 
     }
 

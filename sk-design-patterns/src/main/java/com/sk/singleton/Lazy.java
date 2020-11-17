@@ -8,17 +8,17 @@ package com.sk.singleton;
  */
 public class Lazy {
 
-    private static JavaCourse course = null;
+    private static Lazy lazy = null;
 
-    public static JavaCourse getCourse(){
-        if (course == null){
-            synchronized (Lazy.course){
-                if (course == null){
-                    course = new JavaCourse();
+    public static Lazy getCourse(){
+        if (lazy == null){
+            synchronized (Lazy.class){
+                if (lazy == null){
+                    lazy = new Lazy();
                 }
             }
         }
-        return course;
+        return lazy;
     }
 
 }
