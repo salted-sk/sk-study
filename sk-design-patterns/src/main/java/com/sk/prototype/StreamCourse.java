@@ -23,9 +23,9 @@ public class StreamCourse implements Cloneable, Serializable {
 
     @Override
     public Object clone() {
-        Object o = null;
+        Object o;
         try {
-            o = super.clone();
+            o = this;
             ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
             ObjectOutputStream objectOutputStream = new ObjectOutputStream(byteArrayOutputStream);
             objectOutputStream.writeObject(o);
