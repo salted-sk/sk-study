@@ -13,7 +13,7 @@ import java.util.Map;
 public class Test {
 
     public static void main(String[] args) {
-        JavaCourse javaCourse = new JavaCourse();
+        StreamCourse javaCourse = new StreamCourse();
         javaCourse.setName("java课程");
         javaCourse.setPrice(BigDecimal.TEN);
         Map<String, String> cloneMap = new HashMap<>();
@@ -21,7 +21,7 @@ public class Test {
         cloneMap.put("B","b");
         cloneMap.put("C","c");
         javaCourse.setCloneMap(cloneMap);
-        JavaCourse course2 = (JavaCourse) javaCourse.clone();
+        StreamCourse course2 = (StreamCourse) javaCourse.clone();
         javaCourse.getCloneMap().remove("A");
         System.out.println(javaCourse);
         System.out.println(course2);
