@@ -8,6 +8,12 @@ package com.sk.bridge;
  */
 public abstract class Bank {
 
+    protected Count count;
+
+    public Bank(Count count) {
+        this.count = count;
+    }
+
     public abstract Count getCount();
 
 }

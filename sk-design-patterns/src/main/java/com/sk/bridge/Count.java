@@ -6,9 +6,10 @@ package com.sk.bridge;
  * @author zhangqiao
  * @since 2020/11/19 12:34
  */
-public abstract class Count {
+public interface Count {
 
+    String getAccount();
 
-
+    String type();
 
 }
