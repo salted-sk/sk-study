@@ -8,8 +8,7 @@ package com.sk.bridge;
  */
 public class ABCBank extends Bank{
 
-    public ABCBank(Count count) {
-        super(count);
+    public ABCBank() {
         System.out.println("中国农业银行");
     }
 

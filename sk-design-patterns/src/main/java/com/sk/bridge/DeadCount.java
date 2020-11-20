@@ -11,7 +11,7 @@ public class DeadCount implements Count{
     private String account;
 
     public DeadCount(String account){
-        this.account = getAccount();
+        this.account = account;
     }
 
     @Override

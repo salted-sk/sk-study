@@ -10,10 +10,10 @@ public abstract class Bank {
 
     protected Count count;
 
-    public Bank(Count count) {
+    public abstract Count getCount();
+
+    public void setCount(Count count) {
         this.count = count;
     }
-
-    public abstract Count getCount();
 
 }
