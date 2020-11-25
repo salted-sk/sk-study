@@ -11,4 +11,9 @@ public class Zhangsan implements Person {
 	public void info() {
 		System.out.println("我叫张三");
 	}
+
+    @Override
+    public String toString() {
+        return "测试toString";
+    }
 }
