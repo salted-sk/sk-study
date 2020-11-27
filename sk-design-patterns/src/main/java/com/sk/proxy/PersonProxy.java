@@ -28,7 +28,7 @@ public class PersonProxy implements InvocationHandler {
 
 	public static void main(String[] args) {
 		Object o = new PersonProxy().getZhangsan();
-		((Person)o).info();
+//		((Person)o).info();
 		System.out.println(o);
 	}
 }
