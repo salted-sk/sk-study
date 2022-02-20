@@ -17,7 +17,7 @@ public class PersonProxy implements InvocationHandler {
 	public Object getZhangsan() {
 		target = new Zhangsan();
 		Class<?> clazz = target.getClass();
-		return Proxy.newProxyInstance(clazz.getClassLoader(), clazz.getInterfaces(), this);
+	  	return Proxy.newProxyInstance(clazz.getClassLoader(), clazz.getInterfaces(), this);
 	}
 
 	@Override

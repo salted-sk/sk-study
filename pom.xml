@@ -13,6 +13,7 @@
         <module>sk-design-patterns</module>
         <module>thread</module>
         <module>text</module>
+        <module>sk-data-structure</module>
     </modules>
 
     <build>

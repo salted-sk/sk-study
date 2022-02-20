@@ -1,5 +1,12 @@
 package com.sk.singleton;
 
+import sun.misc.Unsafe;
+
+import java.lang.reflect.Field;
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
+
 /**
  * TODO
  *
@@ -8,8 +15,18 @@ package com.sk.singleton;
  */
 public class Test {
 
-    public static void main(String[] args) {
-        Inner inner = new Inner();
+    public static void main(String[] args) throws IllegalAccessException {
+        Field field = Unsafe.class.getDeclaredFields()[0];
+        field.setAccessible(true);
+        Unsafe unsafe = (Unsafe) field.get(null);
+        while (true) {
+            unsafe.allocateMemory(1024*1024);
+        }
+
+
+
+
+
     }
 
 }

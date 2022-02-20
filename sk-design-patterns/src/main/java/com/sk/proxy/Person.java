@@ -7,5 +7,8 @@ package com.sk.proxy;
  * @since 2020/11/23 22:32
  */
 public interface Person {
+
+    static String s = "";
+
 	void info();
 }
